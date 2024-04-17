@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Manrope', sans-serif;
+    font-size: 1em;
+    background-color: white;
+}
+a{
+    color: #d9edec;
+    text-decoration: none;
+}
+a:hover{
+    color: #0d1414;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+nav .navigation a{
+    padding-right: 60px;
+}
+.heroimage{
+    display: block;
+    position: relative;
+    z-index: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero-bg.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.entete{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.entete h1{
+    font-size: 5em;
+    font-weight: 800;
+    color: #d9edec;
+    margin-bottom: 40px;
+}
+.entete p{
+    color: #42a8a2;
+    font-size: 2em;
+}
+header{
+    padding: 20px 50px;
+    background-color: #829190;
+}
+.btn-image{
+    padding: 15px 45px;
+    border-radius: 50px;
+    background-color: #2cd9cd;
+    background: linear-gradient(90deg, rgba(59, 116, 163, 0.773700305810397) 0%, rgba(50, 169, 182,1) 100%);
+    font-weight: 800;
+    color: #364d55;
+    margin-top: 70px;
+    box-shadow: 3px 5px 5px black;
+}
+.btn-image:hover{
+    background-color: #b74507;
+    color: #080d0e;
+}
+.btn-nav{
+    border-radius: 50px;
+    background-color: #293938;
+    background: linear-gradient(90deg, rgba(59, 116, 163, 0.773700305810397) 0%, rgba(50, 169, 182,1) 100%);
+    font-weight: 800;
+    padding: 10px;
+}
+.btn-nav:hover{
+    background-color: indigo;
+    color: #080d0e;
+}
+
+/* section{
+    padding: 85px 0;
+    border: 1px solid black;
+} */
+
+.section-1{
+    margin-bottom: 70px;
+}
+
+.section-competences{
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.section-competences h1{
+    margin: 60px 0;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.section-competences p{
+    width: 85%;
+}
+
+/* .sectionabout{
+    border: 1px solid black;
+} */
+
+.section-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 75%;
+    margin: auto;
+}
+.etat-col .circle{
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    font-weight: 500;
+    border: 6px solid #1ac34c;
+    border-radius: 50%;
+    margin: 20px;
+    padding: 55px 25px 0 25px;
+    text-align: center;
+    position: relative;
+}
+
+.circle .etat-no{
+    color: #fff;
+    width: 70px;
+    height: 70px;
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    background-color: #E04F00;
+    position: absolute;
+    top: -20px;
+    right: -10px;
+    border-radius: 50%;
+    line-height: 70px;
+}
+
+.section-2{
+    text-align: center;
+    overflow: hidden;
+    height: 400px;
+    background: url(img/sect/parallax-bg.jpg) center top no-repeat;
+    padding-top: 85px ;
+}
+
+.section-2 h1{
+    color: #fff;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.section-2 p{
+    color: #fff;
+    margin-bottom: 45px;
+}
+
+.section-3{
+    padding: 90px;
+}
+
+.section-3 .container h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 80px;
+}
+
+.section-3 .elements{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 80px;
+    text-align: center;
+}
+
+.feature-col .feature-icon{
+    width: 70px;
+    height: 70px;
+    margin-bottom: 15px;
+    background: #199EB8;
+    color: #fff;
+    font-size: 40px;
+    /* text-align: center; */
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+}
+
+.feature-col h3{
+    color: #199EB8;
+    font-size: 25px;
+}
+
+.feature-col p{
+    color: #999;
+    font-size: 15px;
+}
+
+/* ==================================================
+  Small-infos Styling
+  ================================================== */
+
+.small-infos{
+    border: 1px solid black;
+    background-color: #199EB8;
+    padding: 20px 70px;
+}
+
+.expert{
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.expert .action{
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 20%/50%;
+}
+
+.expert h2{
+    padding-bottom: 15px;
+    font-size: 45px;
+}
+
+.et h2,p{
+    color: #fff;
+}
+
+.expert p:last-child{
+    font-size: large;
+}
