@@ -249,7 +249,7 @@ header{
 .form{
     padding: 60px;
     border: 1px solid black;
-    background-color: #6e8684;
+    background-color: #b0bcbb;
 }
 
 .form form .row{
@@ -276,4 +276,32 @@ header{
     text-align: center;
     font-weight: 800;
     color: #199EB8;
+}
+
+
+/* ==================================================
+  CSS pour la section forme
+  ================================================== */
+
+.footer{
+    margin: 70px;
+    height: 60vh;
+}
+
+.footer-gene{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footerdiv{
+    width: 50%;
+    border: 1px solid black;
+    margin-right: 12px;
+    font-size: 18px;
+}
+
+.footer-one{
+
+    background-color: #080d0e;
 }
