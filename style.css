@@ -214,7 +214,6 @@ header{
   ================================================== */
 
 .small-infos{
-    border: 1px solid black;
     background-color: #199EB8;
     padding: 20px 70px;
 }
@@ -240,4 +239,41 @@ header{
 
 .expert p:last-child{
     font-size: large;
+}
+
+/* ==================================================
+  CSS pour la section forme
+  ================================================== */
+
+
+.form{
+    padding: 60px;
+    border: 1px solid black;
+    background-color: #6e8684;
+}
+
+.form form .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* .form form .row:{
+    background-color: #c31a20;
+} */
+
+.row input[type="text"]{
+    height: 30px;
+    border-radius: 5px;
+    
+}
+
+.form h1{
+    text-align: center;
+    font-weight: 800;
+    color: #199EB8;
 }
